@@ -19,6 +19,12 @@ For more API's, submit a pull request to expose components like `BottomNavigatio
 
 ##### `createRaisedButton(args)`
 
+Creates a new raised button.
+
+##### `createTextField(args)`
+
+Creates a new text field.
+
 ---
 
 ### `RaisedButton` (extends `Ti.UI.View`)
@@ -26,6 +32,27 @@ For more API's, submit a pull request to expose components like `BottomNavigatio
 #### Additional Properties
 
 - `title`
+- `color`
+- `selectedColor`
+- `pulseColor`
+- `image`
+
+---
+
+### `TextField` (extends `Ti.UI.View`)
+
+#### Additional Properties
+
+- `value`
+- `hintText`
+- `hintTextColor`
+- `font`
+
+#### Events
+
+- `change`
+- `focus`
+- `blur`
 
 ## Compile native libraries
 

@@ -13,9 +13,7 @@
 {
   if (_button == nil) {
     _button = [[RaisedButton alloc] initWithFrame:self.bounds];
-    _button.title = @"Raised Button";
-    _button.titleColor = [UIColor whiteColor];
-    _button.backgroundColor = Color.blueColor;
+    [_button addTarget:self action:@selector(handleTap) forControlEvents:UIControlEventTouchUpInside];
   }
 
   [self addSubview:_button];
@@ -26,6 +24,13 @@
 - (void)frameSizeChanged:(CGRect)frame bounds:(CGRect)bounds
 {
   [TiUtils setView:[self raisedButton] positionRect:bounds];
+}
+
+- (void)handleTap
+{
+  if ([[self proxy] _hasListeners:@"click"]) {
+    [[self proxy] fireEvent:@"click"];
+  }
 }
 
 @end

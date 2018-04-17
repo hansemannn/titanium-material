@@ -14,8 +14,10 @@
 
 - (void)setPulseColor:(id)backgroundColor;
 
-- (void)setTitleColor:(id)backgroundColor;
+- (void)setColor:(id)backgroundColor;
 
-- (void)setSelectedTitleColor:(id)backgroundColor;
+- (void)setSelectedColor:(id)backgroundColor;
+
+- (void)setImage:(id)image;
 
 @end

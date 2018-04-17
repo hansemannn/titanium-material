@@ -31,18 +31,25 @@
   [[(TiMaterialRaisedButton *)[self view] raisedButton] setPulseColor:[TiUtils colorValue:backgroundColor].color];
 }
 
-- (void)setTitleColor:(id)backgroundColor
+- (void)setColor:(id)backgroundColor
 {
   ENSURE_TYPE(backgroundColor, NSString);
   
   [[(TiMaterialRaisedButton *)[self view] raisedButton] setTitleColor:[TiUtils colorValue:backgroundColor].color];
 }
 
-- (void)setSelectedTitleColor:(id)backgroundColor
+- (void)setSelectedColor:(id)backgroundColor
 {
   ENSURE_TYPE(backgroundColor, NSString);
   
   [[(TiMaterialRaisedButton *)[self view] raisedButton] setSelectedTitleColor:[TiUtils colorValue:backgroundColor].color];
+}
+
+- (void)setImage:(id)image
+{
+  ENSURE_TYPE(image, NSString);
+  
+  [[(TiMaterialRaisedButton *)[self view] raisedButton] setImage:[TiUtils image:image proxy:self]];
 }
 
 @end
