@@ -29,6 +29,8 @@ Creates a new text field.
 
 ### `RaisedButton` (extends `Ti.UI.View`)
 
+<img src=".github/raised-button.gif" height="80" />
+
 #### Additional Properties
 
 - `title`
@@ -40,6 +42,8 @@ Creates a new text field.
 ---
 
 ### `TextField` (extends `Ti.UI.View`)
+
+<img src=".github/text-field.gif" height="100" />
 
 #### Additional Properties
 
@@ -58,7 +62,7 @@ Creates a new text field.
 
 ### iOS
 
-This project uses the following 5 Swift dependencies:
+This project uses the following two Swift dependencies:
 
 - Material
 - Motion
