@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: titanium-material
+author: Hans Knoechel
+license: MIT
+copyright: Copyright (c) 2018 by Hans Knöchel
+
+# these should not be edited
+name: titanium-material
+moduleid: ti.material
+guid: 1a6f07fe-539a-4de4-a299-e66e1d0cca09
+platform: iphone
+minsdk: 6.3.0

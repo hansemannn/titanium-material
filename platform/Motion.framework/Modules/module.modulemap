@@ -1,0 +1,11 @@
+framework module Motion {
+  umbrella header "Motion-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Motion.Swift {
+    header "Motion-Swift.h"
+    requires objc
+}
