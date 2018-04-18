@@ -82,7 +82,7 @@ and `Debug-iphoneos` (Device architectures) and combine them using the following
 5. Copy the `Modules/*.swiftmodule` to the universal directory of the framework
 6. Use the following command to merge the sim- and device-frameworks together:
 ```bash
-lipo -export -output universal/<name>.framework/<name> sim/<name>.framework/<name> device/<name>.framework/<name>
+lipo -create -output universal/<name>.framework/<name> sim/<name>.framework/<name> device/<name>.framework/<name>
 ```
 7. Replace the final frameworks in `<module-project>/platform`
 8. Make a pull request to this repo, so others can benefit from it as well
