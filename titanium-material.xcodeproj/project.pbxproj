@@ -28,6 +28,10 @@
 		24DE9E1211C5FE74003F90F6 /* TiMaterialModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiMaterialModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* TiMaterial_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiMaterial_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		D3A5C61C208A53CC0016243F /* TiMaterialCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A5C618208A53CB0016243F /* TiMaterialCardView.m */; };
+		D3A5C61D208A53CC0016243F /* TiMaterialCardViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A5C619208A53CB0016243F /* TiMaterialCardViewProxy.m */; };
+		D3A5C61E208A53CC0016243F /* TiMaterialCardViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A5C61A208A53CB0016243F /* TiMaterialCardViewProxy.h */; };
+		D3A5C61F208A53CC0016243F /* TiMaterialCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A5C61B208A53CB0016243F /* TiMaterialCardView.h */; };
 		DB21A3682027A91C00921236 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB21A3662027A91C00921236 /* Material.framework */; };
 		DB21A3692027A91C00921236 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB21A3672027A91C00921236 /* Motion.framework */; };
 		DB21A36C2027A99B00921236 /* TiMaterialRaisedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DB21A36A2027A99B00921236 /* TiMaterialRaisedButton.h */; };
@@ -59,6 +63,10 @@
 		AA747D9E0F9514B9006C5449 /* TiMaterial_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiMaterial_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libti.material.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libti.material.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A5C618208A53CB0016243F /* TiMaterialCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiMaterialCardView.m; path = Classes/TiMaterialCardView.m; sourceTree = "<group>"; };
+		D3A5C619208A53CB0016243F /* TiMaterialCardViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiMaterialCardViewProxy.m; path = Classes/TiMaterialCardViewProxy.m; sourceTree = "<group>"; };
+		D3A5C61A208A53CB0016243F /* TiMaterialCardViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiMaterialCardViewProxy.h; path = Classes/TiMaterialCardViewProxy.h; sourceTree = "<group>"; };
+		D3A5C61B208A53CB0016243F /* TiMaterialCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiMaterialCardView.h; path = Classes/TiMaterialCardView.h; sourceTree = "<group>"; };
 		DB21A3662027A91C00921236 /* Material.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Material.framework; path = platform/Material.framework; sourceTree = "<group>"; };
 		DB21A3672027A91C00921236 /* Motion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Motion.framework; path = platform/Motion.framework; sourceTree = "<group>"; };
 		DB21A36A2027A99B00921236 /* TiMaterialRaisedButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TiMaterialRaisedButton.h; path = Classes/TiMaterialRaisedButton.h; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D3A5C620208A53D30016243F /* Card View */,
 				24DE9E0F11C5FE74003F90F6 /* TiMaterialModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TiMaterialModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TiMaterialModule.h */,
@@ -134,6 +143,17 @@
 				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D3A5C620208A53D30016243F /* Card View */ = {
+			isa = PBXGroup;
+			children = (
+				D3A5C61B208A53CB0016243F /* TiMaterialCardView.h */,
+				D3A5C618208A53CB0016243F /* TiMaterialCardView.m */,
+				D3A5C61A208A53CB0016243F /* TiMaterialCardViewProxy.h */,
+				D3A5C619208A53CB0016243F /* TiMaterialCardViewProxy.m */,
+			);
+			name = "Card View";
 			sourceTree = "<group>";
 		};
 		DB21A3722027ABAE00921236 /* Raised Button */ = {
@@ -167,10 +187,12 @@
 			files = (
 				AA747D9F0F9514B9006C5449 /* TiMaterial_Prefix.pch in Headers */,
 				DB7054052086255500E89D8A /* TiMaterialTextFieldProxy.h in Headers */,
+				D3A5C61E208A53CC0016243F /* TiMaterialCardViewProxy.h in Headers */,
 				24DD6CF91134B3F500162E58 /* TiMaterialModule.h in Headers */,
 				DB21A3702027ABA800921236 /* TiMaterialRaisedButtonProxy.h in Headers */,
 				DB21A36C2027A99B00921236 /* TiMaterialRaisedButton.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* TiMaterialModuleAssets.h in Headers */,
+				D3A5C61F208A53CC0016243F /* TiMaterialCardView.h in Headers */,
 				DB7054062086255500E89D8A /* TiMaterialTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,11 +268,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DD6CFA1134B3F500162E58 /* TiMaterialModule.m in Sources */,
+				D3A5C61C208A53CC0016243F /* TiMaterialCardView.m in Sources */,
 				DB7054072086255500E89D8A /* TiMaterialTextFieldProxy.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* TiMaterialModuleAssets.m in Sources */,
 				DB21A3712027ABA800921236 /* TiMaterialRaisedButtonProxy.m in Sources */,
 				DB21A36D2027A99B00921236 /* TiMaterialRaisedButton.m in Sources */,
 				DB7054082086255500E89D8A /* TiMaterialTextField.m in Sources */,
+				D3A5C61D208A53CC0016243F /* TiMaterialCardViewProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -396,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LIBRARY = "libstdc++";
 				DSTROOT = /tmp/TiMaterial.dst;
