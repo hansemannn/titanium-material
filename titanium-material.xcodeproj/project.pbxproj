@@ -125,11 +125,11 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D3A5C620208A53D30016243F /* Card View */,
 				24DE9E0F11C5FE74003F90F6 /* TiMaterialModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* TiMaterialModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* TiMaterialModule.h */,
 				24DD6CF81134B3F500162E58 /* TiMaterialModule.m */,
+				D3A5C620208A53D30016243F /* Card View */,
 				DB705400208624D100E89D8A /* Text Field */,
 				DB21A3722027ABAE00921236 /* Raised Button */,
 			);

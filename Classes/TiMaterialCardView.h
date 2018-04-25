@@ -11,6 +11,7 @@
 @interface TiMaterialCardView : TiUIView {
     Card *_cardView;
 }
+
 - (Card *)cardView;
 
 @end

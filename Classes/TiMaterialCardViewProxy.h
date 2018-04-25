@@ -11,4 +11,10 @@
 
 - (void)setContentView:(id)contentView;
 
+- (void)setBackgroundColor:(id)backgroundColor;
+
+- (void)setCornerRadius:(id)cornerRadius;
+
+- (void)setContentViewEdgeInsets:(id)contentViewEdgeInsets;
+
 @end

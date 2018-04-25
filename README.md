@@ -25,6 +25,10 @@ Creates a new raised button.
 
 Creates a new text field.
 
+##### `createCardView(args)`
+
+Creates a new card view.
+
 ---
 
 ### `RaisedButton` (extends `Ti.UI.View`)
@@ -33,11 +37,22 @@ Creates a new text field.
 
 #### Additional Properties
 
-- `title`
-- `color`
-- `selectedColor`
-- `pulseColor`
-- `image`
+- `title` (`String`)
+- `color` (`String`)
+- `selectedColor` (`String`)
+- `pulseColor` (`String`)
+- `image` (`String`)
+
+---
+
+### `RaisedButton` (extends `Ti.UI.View`)
+
+#### Additional Properties
+
+- `contentView` (`Ti.UI.View`)
+- `contentViewInsets` (`Dictionary`)
+- `backgroundColor` (`String`)
+- `cornerRadius` (`Number`)
 
 ---
 
@@ -47,10 +62,10 @@ Creates a new text field.
 
 #### Additional Properties
 
-- `value`
-- `hintText`
-- `hintTextColor`
-- `font`
+- `value` (`String`)
+- `hintText` (`String`)
+- `hintTextColor` (`String`)
+- `font` (`Dictionary`)
 
 #### Events
 
