@@ -14,9 +14,8 @@
   if (_button == nil) {
     _button = [[RaisedButton alloc] initWithFrame:self.bounds];
     [_button addTarget:self action:@selector(handleTap) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_button];
   }
-
-  [self addSubview:_button];
 
   return _button;
 }

@@ -13,9 +13,9 @@
 {
     if (_cardView == nil) {
         _cardView = [[Card alloc] initWithFrame:self.bounds];
+        [_cardView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+        [self addSubview:_cardView];
     }
-
-    [self addSubview:_cardView];
 
     return _cardView;
 }

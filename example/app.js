@@ -13,9 +13,6 @@ var btn = Material.createRaisedButton({
   title: 'Titanium rocks',
 });
 
-btn.addEventListener('click', function() {
-  alert('YEY!');
-});
 
 var field = Material.createTextField({
   top: 200,
@@ -34,6 +31,27 @@ field.addEventListener('blur', function(e) {
   Ti.API.info('BLUR!');
 });
 
+var contentView = Ti.UI.createView({
+  height: 100,
+  backgroundColor: 'red'
+});
+
+contentView.add(Ti.UI.createLabel({
+  text: 'Hello world!',
+  textAlign: 'center',
+  width: 200,
+  height: 50
+}));
+
+var card = Material.createCardView({
+  top: 300,
+  width: 300,
+  cornerRadius: 10
+});
+
+card.setContentView(contentView);
+
 win.add(btn);
 win.add(field);
+win.add(card);
 win.open();

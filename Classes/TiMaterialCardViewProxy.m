@@ -14,6 +14,9 @@
 - (void)setContentView:(id)viewProxy
 {
   ENSURE_TYPE(viewProxy, TiViewProxy);
+  [TiUtils setView:[viewProxy view] positionRect:[viewProxy view].bounds];
+  
+  CGRect frame = [viewProxy view].frame;
   [[(TiMaterialCardView *)[self view] cardView] setContentView:[viewProxy view]];
 }
 
