@@ -45,7 +45,7 @@ Creates a new card view.
 
 ---
 
-### `RaisedButton` (extends `Ti.UI.View`)
+### `CardView` (extends `Ti.UI.View`)
 
 #### Additional Properties
 
